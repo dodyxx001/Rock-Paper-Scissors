@@ -21,7 +21,9 @@ let computerPlay = () => {
 // Getting the user's input and lowerCasing it
 let userInput = prompt("Please enter rock, paper or scissors").toLowerCase();
 
+
 // Saving the inputs to variables
+
 let computerSelection = computerPlay();
 let playerSelection = userInput;
 
@@ -31,7 +33,7 @@ let round = (computerSelection, playerSelection) => {
   let winText = 'Congratulations, you win!';
   let loseText = 'Sorry, you lose!';
 
-  if (computerSelection === userInput){
+  if (computerSelection === playerSelection){
       return 'It\'s a tie!';
   }else if( playerSelection === 'rock' && computerSelection === 'scissors'){
       return winText;
@@ -65,7 +67,7 @@ console.log(round(computerSelection, playerSelection));
 
 
 
-// Repeating rounds 5 times
+// Repeating rounds 5 times / if i is true, play oneround
 for( let i = 0; i <= 5; i++){
     if(i){oneRound()};
 };
