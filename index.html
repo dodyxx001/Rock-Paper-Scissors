@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock - Paper - Scissors</title>
+    <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Title section -->
+    <div class="title">
+        <h1>Rock - Paper - Scissors</h1>
+        <p>Click the button to pick a choice! First player who reaches score of 3, wins.</p>
+    </div>
+
+    <!-- Logos & buttons section -->
+    <div class="buttons">
+        <div class="choice">
+            <img src="./images/rock.png" id="rock">
+            <p>Rock</p>
+        </div>
+        <div class="choice">
+            <img src="./images/paper.png" id="paper">
+            <p>Paper</p>
+        </div>
+        <div class="choice">
+            <img src="./images/scissors.png" id="scissors">
+            <p>Scissors</p>
+        </div>
+    </div>
+
+    <!-- Print choices section -->
+    <div class="choices-container">
+        <div class="show-choices">
+            <p>YOUR CHOICE:</p>
+            <p id="player-choice"></p>
+        </div>
+        <div class="show-choices">
+            <p>OPPONENT'S CHOICE:</p>
+            <p id="computer-choice"></p>
+        </div>
+    </div>
+
+    <!-- Print text section -->
+    <div class="wintext-container">
+        <p id="wintext"></p>
+    </div>
+
+    <!-- Print scores section -->
+    <div class="scores-container">
+        <div class="scores">
+            <p>YOUR SCORE:</p>
+            <p id="player-score"></p>
+        </div>
+        <div class="scores">
+            <p>OPPONENT'S SCORE:</p>
+            <p id="computer-score"></p>
+        </div>
+    </div>
+
+    <!-- Announcement section -->
+    <div class="announce">
+        <h1>Final result:</h1>
+        <p id="announce-win">You win the game!</p>
+        <p id="announce-lose">You lose the game!</p>
+        <button id="play-again">PLAY AGAIN</button>
+    </div>
+
     
 <script src="./script.js"></script>
 </body>
